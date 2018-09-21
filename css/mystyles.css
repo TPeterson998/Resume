@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+body>header>nav>ul>li>a:link,
+body>header>nav>ul>li>a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+body>header>nav>ul>li>a:hover,
+body>header>nav>ul>li>a:active {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
