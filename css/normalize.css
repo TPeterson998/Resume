@@ -1,5 +1,5 @@
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
-
+/* I commented out many peices of code in this and in the main.css to make the code I wanted work. */
 /* Document
    ========================================================================== */
 
@@ -45,6 +45,7 @@ h1 {
  */
 
 /* My stuff >*/
+/* I added in a background image and made it so the picture would fit. */
 html {
   background-image: url('https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=395debe4f66b27cd8fb346d73cffb70c&auto=format&fit=crop&w=800&q=60');
   background-repeat: no-repeat;
@@ -52,6 +53,7 @@ html {
   background-attachment: fixed;
 }
 
+/* I add the background color of where my text would be and the color and size of my text. I also changed the line-height. */
 body {
   background-color: black;
   color: white;
@@ -60,6 +62,7 @@ body {
 
 }
 
+/* I changed up the links and there state in the nav and st up the nav. */
 body>header>nav>ul>li>a:link,
 body>header>nav>ul>li>a:visited {
   text-decoration: none;
@@ -77,17 +80,20 @@ ul {
   list-style-type: none;
 }
 
+/* I set up the footer. */
 footer {
   text-align: center;
   margin-top: 6em;
 
 }
 
+/* I aligned the the text of my home page. */
 article h2,
 article p {
   text-align: center;
 }
 
+/* I set up the nav structure and layout. */
 header>nav {
   display: table;
   width: 100%;
@@ -103,6 +109,7 @@ header>nav>ul>li {
   text-align: center;
 }
 
+/* I set up the links in the footer. */
 footer>address>a:hover,
 footer>address>a :active {
   background-color: white;
@@ -116,6 +123,7 @@ footer a:visited {
   color: white;
 }
 
+/* I set yp the size, alignment and padding of my header. */
 header h1 {
   font-size: 3em;
   text-align: center;
