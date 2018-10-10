@@ -1,31 +1,41 @@
 /* I added in a background image and made it so the picture would fit. */
 html {
-    background-image: url('https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=395debe4f66b27cd8fb346d73cffb70c&auto=format&fit=crop&w=800&q=60');
+    background-image: url('https://c1.staticflickr.com/7/6052/6333984637_7d08596f9e_b.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
-/* I add the background color of where my text would be and the color and size of my text. I also changed the line-height. */
+/* I add the background color of where my text would be and the color and size of my text. I also changed the line-height amd the margin.*/
 body {
-    background-color: black;
-    color: white;
-    font-size: 1em;
+    background-color: rgb(133, 88, 37);
+    color: rgb(1, 1, 1);
+    font-size: 1.5em;
     line-height: 1.5em;
+    margin: 4em;
+    margin-top: 0em;
+}
 
+article p {
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
 /* I changed up the links and there state in the nav and st up the nav. */
 body>header>nav>ul>li>a:link,
 body>header>nav>ul>li>a:visited {
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
+}
+
+ul {
+    padding: 0em;
 }
 
 body>header>nav>ul>li>a:hover,
 body>header>nav>ul>li>a:active {
-    background-color: white;
-    color: black;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
@@ -36,7 +46,7 @@ ul {
 /* I set up the footer. */
 footer {
     text-align: center;
-    margin-top: 6em;
+    margin-top: 2em;
 
 }
 
@@ -65,15 +75,15 @@ header>nav>ul>li {
 /* I set up the links in the footer. */
 footer>address>a:hover,
 footer>address>a :active {
-    background-color: white;
-    color: black;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none
 }
 
 footer a:link,
 footer a:visited {
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 /* I set yp the size, alignment and padding of my header. */
@@ -81,6 +91,10 @@ header h1 {
     font-size: 3em;
     text-align: center;
 
+}
+
+footer p {
+    margin: 0em;
 }
 
 header {
