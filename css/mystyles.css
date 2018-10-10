@@ -56,6 +56,11 @@ article p {
     text-align: center;
 }
 
+dt {
+    text-align: center;
+    font-weight: bold;
+}
+
 /* I set up the nav structure and layout. */
 header>nav {
     display: table;
