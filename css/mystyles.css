@@ -1,41 +1,68 @@
+@charset "utf-8";
+
 /* I added in a background image and made it so the picture would fit. */
 html {
-    background-image: url('');
+    background-image: url('https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
-/* I add the background color of where my text would be and the color and size of my text. I also changed the line-height amd the margin.*/
+/* I add the background color of where my text would be and the color and size of my text. I also changed the line-height and the margin.*/
 body {
-    background-color: rgb(133, 88, 37);
-    color: rgb(1, 1, 1);
+    background-color: rgba(15, 109, 78, 0.795);
+    color: rgb(194, 230, 95);
     font-size: 1.5em;
     line-height: 1.5em;
-    margin: 4em;
-    margin-top: 0em;
+    grid-template-rows: 20% 70% 10%;
 }
 
-article p {
-    margin-left: 2em;
-    margin-right: 2em;
+
+
+section {
+    grid-template-rows: 20% 80%;
+}
+
+nav {
+    width: 100%;
+    grid-template-columns: 25% 25% 25% 25%;
+    list-style-type: none;
+    display: block;
+}
+
+li {
+    display: block;
+    width: 25%;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: rgb(30, 221, 157);
 }
 
 /* I changed up the links and there state in the nav and st up the nav. */
-body>header>nav>ul>li>a:link,
-body>header>nav>ul>li>a:visited {
+a:link,
+a:visited {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(194, 230, 95);
 }
 
-ul {
-    padding: 0em;
-}
 
-body>header>nav>ul>li>a:hover,
-body>header>nav>ul>li>a:active {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+
+a:hover,
+a:active {
+    background-color: rgb(194, 230, 95);
+    color: rgb(15, 109, 78);
     text-decoration: none;
 }
 
@@ -62,34 +89,9 @@ dt {
 }
 
 /* I set up the nav structure and layout. */
-header>nav {
-    display: table;
-    width: 100%;
-}
 
-header>nav>ul {
-    display: table-row;
-    list-style-type: none;
-}
 
-header>nav>ul>li {
-    display: table-cell;
-    text-align: center;
-}
 
-/* I set up the links in the footer. */
-footer>address>a:hover,
-footer>address>a :active {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    text-decoration: none
-}
-
-footer a:link,
-footer a:visited {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-}
 
 /* I set yp the size, alignment and padding of my header. */
 header h1 {
@@ -104,4 +106,12 @@ footer p {
 
 header {
     padding-top: 1em;
+}
+
+footer {
+    clear: both;
+    content: "";
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
 }
