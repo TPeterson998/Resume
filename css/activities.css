@@ -1,7 +1,91 @@
 @charset "utf-8";
 
-.marker {
+a.marker {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    padding: 0px 0px 10px 0px
+}
+
+
+
+
+
+.info {
+    text-align: center;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#info1 p {
+    display: none;
+}
+
+div#info1:hover p {
+    display: block
+}
+
+div#info2 p {
+    display: none;
+}
+
+div#info2:hover p {
+    display: block
+}
+
+div#info3 p {
+    display: none;
+}
+
+div#info3:hover p {
+    display: block
+}
+
+div#info4 p {
+    display: none;
+}
+
+div#info4:hover p {
+    display: block
+}
+
+div#info5 p {
+    display: none;
+}
+
+div#info5:hover p {
+    display: block
+}
+
+div#info6 p {
+    display: none;
+}
+
+div#info6:hover p {
+    display: block
+}
+
+div#info7 p {
+    display: none;
+}
+
+div#info7:hover p {
+    display: block
+}
+
+div#info8 p {
+    display: none;
+}
+
+div#info8:hover p {
+    display: block
+}
+
+div#info9 p {
+    display: none;
+}
+
+div#info9:hover p {
+    display: block
 }

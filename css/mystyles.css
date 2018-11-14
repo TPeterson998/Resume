@@ -17,6 +17,7 @@ body {
     line-height: 1.5em;
     grid-template-rows: 20% 70% 10%;
     min-height: 710px;
+    max-height: 100%;
 }
 
 
@@ -33,7 +34,7 @@ nav {
     display: block;
 }
 
-li {
+header a {
     display: block;
     width: 25%;
     float: left;
@@ -79,16 +80,21 @@ footer {
     margin-top: 2em;
 }
 
-/* I aligned the the text of my home page. */
-article h2,
-article p {
-    text-align: center;
+footer::after {
+    clear: both;
+    content: "";
+    display: table;
 }
 
-dt {
+/* I aligned the the text of my home page and set up a margin */
+article h2,
+article a {
     text-align: center;
-    font-weight: bold;
+    margin-left: 2em;
+    margin-right: 2em;
 }
+
+
 
 /* I set up the nav structure and layout. */
 
