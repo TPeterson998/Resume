@@ -88,7 +88,8 @@ footer::after {
 
 /* I aligned the the text of my home page and set up a margin */
 article h2,
-article a {
+article a,
+article p {
     text-align: center;
     margin-left: 2em;
     margin-right: 2em;
@@ -96,12 +97,12 @@ article a {
 
 
 
-/* I set up the nav structure and layout. */
 
 
 
 
-/* I set yp the size, alignment and padding of my header. */
+
+/* I set up the size, alignment and padding of my header. */
 header h1 {
     font-size: 3em;
     text-align: center;
