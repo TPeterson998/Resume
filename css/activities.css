@@ -8,6 +8,10 @@ a.marker {
     font-weight: bold;
 }
 
+body {
+    width: 60em;
+}
+
 .info p {
     background-color: rgba(9, 75, 54, 0.795)
 }

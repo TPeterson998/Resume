@@ -97,6 +97,15 @@ article {
     text-align: center;
     margin-left: 2em;
     margin-right: 2em;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: column wrap;
+}
+
+div {
+    display: flex;
+    display: -webkit-flex;
+    width: 100%;
 }
 
 /* I set up the size, alignment and padding of my header. */
