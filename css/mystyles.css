@@ -2,45 +2,79 @@
 
 /* I added in a background image and made it so the picture would fit. */
 html {
+
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    display: -webkit-flex;
+    flex: 0 2 auto;
+    -webkit-flex: 0 2 auto;
+    flex-flow: row wrap;
+
+}
+
+html:before {
     background-image: url('https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: 'Courier New', Courier, monospace;
+    background-size: 100% 100%;
+    filter: saturate(1)
 }
 
 /* I add the background color of where my text would be and the color and size of my text. I also changed the line-height and the margin.*/
 body {
     background-color: rgba(15, 109, 78, 0.795);
     color: rgb(194, 230, 95);
-    font-size: 1.5em;
+    font-size: 1.25em;
     line-height: 1.5em;
-    grid-template-rows: 20% 70% 10%;
-    min-height: 710px;
-    max-height: 100%;
+    display: flex;
+    display: -webkit-flex;
+    flex: 0 2 auto;
+    -webkit-flex: 0 2 auto;
+    flex-flow: column wrap;
+    min-height: 36em;
+    height: 100%;
 }
 
-
-
-section {
-    grid-template-rows: 20% 80%;
-}
 
 nav {
-    width: 100%;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 100%;
     list-style-type: none;
-    display: block;
+    display: flex;
+    display: -webkit-flex;
+    flex: 0 2 auto;
+    -webkit-flex: 0 2 auto;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
-header a {
-    display: block;
+ul {
+    display: flex;
+    display: -webkit-flex;
+    flex: 0 2 auto;
+    -webkit-flex: 0 2 auto;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    padding: 0em;
+    width: 100%;
+
+}
+
+header ul li {
     width: 25%;
-    float: left;
-    margin-left: auto;
-    margin-right: auto;
+}
+
+header ul li a {
+    display: flex;
+    display: -webkit-flex;
+    flex: 0 2 auto;
+    -webkit-flex: 0 2 auto;
     text-align: center;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -87,35 +121,29 @@ footer::after {
 }
 
 /* I aligned the the text of my home page and set up a margin */
-article h2,
-article a,
-article p {
+article {
     text-align: center;
     margin-left: 2em;
     margin-right: 2em;
+    display: flex;
+    display: -webkit-flex;
+    flex: 0 2 auto;
+    -webkit-flex: 0 2 auto;
+    flex-flow: column wrap;
 }
 
-
-
-
-
-
-
+div {
+    display: flex;
+    display: -webkit-flex;
+    flex: 0 2 auto;
+    -webkit-flex: 0 2 auto;
+    width: 100%;
+}
 
 /* I set up the size, alignment and padding of my header. */
 header h1 {
     font-size: 3em;
     text-align: center;
-
-}
-
-footer p {
-    margin: 0em;
-}
-
-header {
-    padding-top: 1em;
-    margin-bottom: 6em;
 }
 
 footer {
@@ -124,4 +152,76 @@ footer {
     display: table;
     margin-left: auto;
     margin-right: auto;
+}
+
+a#navicon {
+    display: none;
+}
+
+/* Mobile */
+
+@media only screen and (max-width:480px) {
+    body {
+        display: flex;
+        display: -webkit-flex;
+        flex-flow: column wrap;
+        font-size: 1em;
+    }
+
+
+    nav {
+        list-style-type: none;
+        display: flex;
+        display: -webkit-flex;
+        flex: 1 2 auto;
+        -webkit-flex: 1 2 auto;
+        flex-flow: row wrap;
+        -webkit-flex-flow: row wrap;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    ul {
+        display: flex;
+        display: -webkit-flex;
+        flex: 1 2 auto;
+        -webkit-flex: 1 2 auto;
+        flex-flow: row wrap;
+        -webkit-flex-flow: row wrap;
+        margin: none;
+        width: 100%;
+        margin: 0 0 0 2em;
+    }
+
+    header ul li {
+        width: 100%;
+    }
+
+    header ul li a {
+        display: flex;
+        display: -webkit-flex;
+        flex: 1 2 auto;
+        -webkit-flex: 1 2 auto;
+        text-align: center;
+        flex-flow: row wrap;
+        -webkit-flex-flow: row wrap;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    a#navicon {
+        display: block;
+        margin-left: 2em;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    a#navicon:hover+ul,
+    nav ul:hover {
+        display: block;
+    }
 }
