@@ -9,19 +9,15 @@ html {
     flex: 0 2 auto;
     -webkit-flex: 0 2 auto;
     flex-flow: row wrap;
-
-}
-
-html:before {
     background-image: url('https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    filter: saturate(1)
 }
+
 
 /* I add the background color of where my text would be and the color and size of my text. I also changed the line-height and the margin.*/
 body {
-    background-color: rgba(15, 109, 78, 0.795);
+    background-color: rgba(15, 109, 78, 0.79);
     color: rgb(194, 230, 95);
     font-size: 1.25em;
     line-height: 1.5em;
@@ -32,6 +28,7 @@ body {
     flex-flow: column wrap;
     min-height: 36em;
     height: 100%;
+    width: 100%;
 }
 
 
@@ -139,6 +136,8 @@ div {
     -webkit-flex: 0 2 auto;
     width: 100%;
 }
+
+
 
 /* I set up the size, alignment and padding of my header. */
 header h1 {
