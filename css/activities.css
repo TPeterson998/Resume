@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+/* All of this stylesheet sets up the organization page by allowing you to hover over the name of the organization and the text about that organization will appear.  */
 a.marker {
     margin-left: auto;
     margin-right: auto;
@@ -9,7 +10,7 @@ a.marker {
 }
 
 body {
-    width: 60em;
+    background-size: auto auto;
 }
 
 .info p {
@@ -92,4 +93,12 @@ div#info9 p {
 
 div#info9:hover p {
     display: block
+}
+
+div {
+    display: flex;
+    display: -webkit-flex;
+    flex: 0 2 auto;
+    -webkit-flex: 0 2 auto;
+    width: 100%;
 }

@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* I added in a background image and made it so the picture would fit. */
+/* I added in a background image and made it so the picture would fit. I also displayed this as a flex box with a certin growth and shrink rate and as rows that wrap*/
 html {
 
     font-family: 'Courier New', Courier, monospace;
@@ -15,7 +15,7 @@ html {
 }
 
 
-/* I add the background color of where my text would be and the color and size of my text. I also changed the line-height and the margin.*/
+/* I add the background color of where my text would be and the color and size of my text. I also changed the line-height and the margin. I also displayed this as a flex box with a certin growth and shrink rate and as columns that wrap*/
 body {
     background-color: rgba(15, 109, 78, 0.79);
     color: rgb(194, 230, 95);
@@ -75,7 +75,7 @@ header ul li a {
 }
 
 
-
+/* This sets up the color of all titles  */
 h1,
 h2,
 h3,
@@ -85,14 +85,12 @@ h6 {
     color: rgb(30, 221, 157);
 }
 
-/* I changed up the links and there state in the nav and st up the nav. */
+/* I changed up the color of links in there different states */
 a:link,
 a:visited {
     text-decoration: none;
     color: rgb(194, 230, 95);
 }
-
-
 
 a:hover,
 a:active {
@@ -101,6 +99,7 @@ a:active {
     text-decoration: none;
 }
 
+/* This takes away the disc in front of list items  */
 ul {
     list-style-type: none;
 }
@@ -109,15 +108,18 @@ ul {
 footer {
     text-align: center;
     margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+/* Prevents container collapse */
 footer::after {
     clear: both;
     content: "";
     display: table;
 }
 
-/* I aligned the the text of my home page and set up a margin */
+/* I aligned the the text of my home page and set up a margin. I also displayed this as a flex box with a certin growth and shrink rate and as rows that wrap */
 article {
     text-align: center;
     margin-left: 2em;
@@ -129,37 +131,22 @@ article {
     flex-flow: column wrap;
 }
 
-div {
-    display: flex;
-    display: -webkit-flex;
-    flex: 0 2 auto;
-    -webkit-flex: 0 2 auto;
-    width: 100%;
-}
-
-
-
 /* I set up the size, alignment and padding of my header. */
 header h1 {
     font-size: 3em;
     text-align: center;
 }
 
-footer {
-    clear: both;
-    content: "";
-    display: table;
-    margin-left: auto;
-    margin-right: auto;
-}
-
+/* Makes the nav icon disapear from the page */
 a#navicon {
     display: none;
 }
 
 /* Mobile */
-
+/* This sets up the mobile design */
 @media only screen and (max-width:480px) {
+
+    /* I displayed this as a flex box with a certin growth and shrink rate and as columns that wrap and set the font size up  */
     body {
         display: flex;
         display: -webkit-flex;
@@ -167,7 +154,7 @@ a#navicon {
         font-size: 1em;
     }
 
-
+    /* This sets up the nav in the mobile design so that it works as a flex box and is aligned in the correct place */
     nav {
         list-style-type: none;
         display: flex;
@@ -210,11 +197,13 @@ a#navicon {
         align-items: flex-start;
     }
 
+    /* Makes the navicon reappear */
     a#navicon {
         display: block;
         margin-left: 2em;
     }
 
+    /* This makes it so the nav only appears when you hover over the navicon */
     nav ul {
         display: none;
     }
