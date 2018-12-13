@@ -140,6 +140,7 @@ a#navicon {
         margin: none;
         width: 100%;
         margin: 0 0 0 2em;
+        padding: 0px;
     }
 
     header ul li {
@@ -177,7 +178,7 @@ a#navicon {
 }
 
 /* This helps fix the nav so that it is responsive when out of mobile design. */
-@media only screen and (min-width:481px) {
+@media only screen and (min-width:621px) {
 
     nav {
         font-size: .8em;
