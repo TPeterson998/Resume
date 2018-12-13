@@ -26,53 +26,13 @@ body {
     flex: 0 2 auto;
     -webkit-flex: 0 2 auto;
     flex-flow: column wrap;
-    min-height: 36em;
+    min-height: 38em;
     height: 100%;
     width: 100%;
 }
 
 
-nav {
-    list-style-type: none;
-    display: flex;
-    display: -webkit-flex;
-    flex: 0 2 auto;
-    -webkit-flex: 0 2 auto;
-    flex-flow: row wrap;
-    -webkit-flex-flow: row wrap;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
 
-ul {
-    display: flex;
-    display: -webkit-flex;
-    flex: 0 2 auto;
-    -webkit-flex: 0 2 auto;
-    flex-flow: row wrap;
-    -webkit-flex-flow: row wrap;
-    padding: 0em;
-    width: 100%;
-
-}
-
-header ul li {
-    width: 25%;
-}
-
-header ul li a {
-    display: flex;
-    display: -webkit-flex;
-    flex: 0 2 auto;
-    -webkit-flex: 0 2 auto;
-    text-align: center;
-    flex-flow: row wrap;
-    -webkit-flex-flow: row wrap;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
 
 
 /* This sets up the color of all titles  */
@@ -144,7 +104,8 @@ a#navicon {
 
 /* Mobile */
 /* This sets up the mobile design */
-@media only screen and (max-width:480px) {
+/* I had to incerease the max width because there was no other way for me to fix the page */
+@media only screen and (max-width:620px) {
 
     /* I displayed this as a flex box with a certin growth and shrink rate and as columns that wrap and set the font size up  */
     body {
@@ -152,6 +113,7 @@ a#navicon {
         display: -webkit-flex;
         flex-flow: column wrap;
         font-size: 1em;
+        min-height: 720px;
     }
 
     /* This sets up the nav in the mobile design so that it works as a flex box and is aligned in the correct place */
@@ -211,5 +173,65 @@ a#navicon {
     a#navicon:hover+ul,
     nav ul:hover {
         display: block;
+    }
+}
+
+/* This helps fix the nav so that it is responsive when out of mobile design. */
+@media only screen and (min-width:481px) {
+
+    nav {
+        font-size: .8em;
+        list-style-type: none;
+        width: 100%;
+        position: relative;
+    }
+
+    ul {
+        display: flex;
+        display: -webkit-flex;
+        flex: 0 2 auto;
+        -webkit-flex: 0 2 auto;
+        flex-flow: row wrap;
+        -webkit-flex-flow: row wrap;
+        width: 100%;
+        padding: 0px;
+    }
+
+    header ul li {
+        width: 25%;
+    }
+
+    header ul li a {
+        display: flex;
+        display: -webkit-flex;
+        flex: 0 2 auto;
+        -webkit-flex: 0 2 auto;
+        flex-flow: row wrap;
+        -webkit-flex-flow: row wrap;
+
+        justify-content: center;
+        align-items: center;
+        margin: 0 .1em;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:770px) {
+    nav {
+
+        font-size: 1em;
+    }
+}
+
+/* Both of these help there be no white space when placed on a Ipad or Ipad pro */
+@media only screen and (min-height:1024px) {
+    body {
+        min-height: 1024px;
+    }
+}
+
+@media only screen and (min-height:1366px) {
+    body {
+        min-height: 1366px;
     }
 }
