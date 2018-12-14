@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+/* THis entire site is responsive to all of the mobile defices on the devices on the inspect tools.*/
 /* I added in a background image and made it so the picture would fit. I also displayed this as a flex box with a certin growth and shrink rate and as rows that wrap*/
 html {
 
@@ -49,7 +50,8 @@ h6 {
 a:link,
 a:visited {
     text-decoration: none;
-    color: rgb(194, 230, 95);
+    color: rgb(158, 248, 135);
+    font-weight: bold;
 }
 
 a:hover,
@@ -67,9 +69,7 @@ ul {
 /* I set up the footer. */
 footer {
     text-align: center;
-    margin-top: 2em;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 2em auto 2em auto;
 }
 
 /* Prevents container collapse */
