@@ -95,6 +95,14 @@ div#info9:hover p {
     display: block
 }
 
+div#info10 p {
+    display: none;
+}
+
+div#info10:hover p {
+    display: block
+}
+
 div {
     display: flex;
     display: -webkit-flex;
@@ -108,4 +116,5 @@ div {
     text-decoration: none;
     color: rgb(158, 248, 135);
     font-weight: bold;
+    margin-bottom: 3em;
 }
